@@ -17,4 +17,4 @@ I also created the following documents with LaTeX:
 - [Design Proposal](./cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf) for an invitation letter.
 - A [Work](./TM_YvesZUMBACH_2014-2015.pdf) I had to submit.
 - [Poster](./B22_poster.pdf) about internet pollution.
-- A [page]{./citationNature.pdf} about Nature
+- A [page](./citationNature.pdf) about Nature
