@@ -15,5 +15,6 @@ I also created the following documents with LaTeX:
 
 - An [article](./articleGeopolitique_YvesZumbach_2016.pdf) about hacking and geopolitics.
 - [Design Proposal](./cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf) for an invitation letter.
+- A [Work](./TM_YvesZUMBACH_2014-2015.pdf) I had to submit.
 - [Poster](./B22_poster.pdf) about internet pollution.
-- Another [Work](./TM_YvesZUMBACH_2014-2015.pdf) I had to submit.
+- A [page]{./citationNature.pdf} about Nature
