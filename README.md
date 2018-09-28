@@ -1,18 +1,19 @@
 # Portfolio
-Showcases a few assets I created
 
-## Paper Documents
-
-I would recommend looking first at [articleGeopolitique_YvesZumbach_2016.pdf](./articleGeopolitique_YvesZumbach_2016.pdf) which is an article I wrote for a Geography class in High-School.
-
-High-School diploma work: [TM_YvesZUMBACH_2014-2015.pdf](./TM_YvesZUMBACH_2014-2015.pdf)
-
-Design proposal for a invitation letter contest: [cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf](./cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf)
-
+*Yves Zumbach*
 
 ## Web Design
 
-I designed the following websites:
+I designed and implemented the following websites:
 
-- [jeanpierrepastori.ch](http://jeanpierrepastori.ch/)
-- [ASARPhiB](https://jonathanbennett980.github.io/ASARPhiB/)
+- [ASARPhiB](https://jonathanbennett980.github.io/ASARPhiB/), a philosophical blog
+- [jeanpierrepastori.ch](http://jeanpierrepastori.ch/), online resume of an important Swiss journalist and dance writer
+
+## Paper Documents
+
+I also created the following documents with LaTeX:
+
+- An [article](./articleGeopolitique_YvesZumbach_2016.pdf) about hacking and geopolitics.
+- [Design Proposal](./cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf) for an invitation letter.
+- [Poster](./B22_poster.pdf) about internet pollution.
+- Another [Work](./TM_YvesZUMBACH_2014-2015.pdf) I had to submit.
