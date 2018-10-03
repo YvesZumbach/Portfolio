@@ -1,0 +1,24 @@
+{
+  "name": "yveszumbachportfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.14.1",
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YvesZumbach/Portfolio.git"
+  },
+  "author": "Yves Zumbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YvesZumbach/Portfolio/issues"
+  },
+  "homepage": "https://github.com/YvesZumbach/Portfolio#readme"
+}
