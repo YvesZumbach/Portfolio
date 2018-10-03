@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: 'DiamondsRegular';
-    src: url('../fonts/DiamondsRegular.woff') format('woff'), url('https://github.com/YvesZumbach/Portfolio/blob/master/fonts/DiamondsRegular.woff?raw=true') format('woff');
+    src: url('../fonts/DiamondsRegular.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/DiamondsRegular.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'LoveloLineLight';
-    src: url('../fonts/LoveloLineLight.woff') format('woff'), url('https://github.com/YvesZumbach/Portfolio/blob/master/fonts/LoveloLineLight.woff?raw=true') format('woff');
+    src: url('../fonts/LoveloLineLight.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/LoveloLineLight.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
