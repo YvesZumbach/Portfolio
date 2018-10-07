@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/favicon.ico">
     <title>Yves Zumbach Portfolio</title>
     <!-- Font Awesome CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Font Inclusion -->
     <link href="css/font-faces.css" rel="stylesheet">
     <!-- Main CSS -->
@@ -18,304 +18,489 @@
 </head>
 <body>
 
-    <div class="section-hero">
-        <div class="container h-100">
-            <div class="row justify-content-center align-items-center h-100">
-                <div class="col-auto text-center">
-                    <span class="avatar"><img src="img/avatar.jpg" alt="" /></span>
-                    <div class="title">
-                        <h1>Yves Zumbach</h1>
-                        <p class="lead">
-                            Portfolio
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <section id="about">
-        <div class="section-about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>About Me</h3>
-                        <div class="line asarphib-line">
+    <div id="app">
+        <div class="section-hero">
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 text-center align-middle">
+                        <span class="avatar"><img src="img/avatar.jpg" alt="" /></span>
+                        <div class="title">
+                            <h1>Yves Zumbach</h1>
+                            <p class="lead mb-4">
+                                Portfolio
+                            </p>
+                            <p>
+                                <ul class="heroicons">
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/in/yves-z-4b1110103/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="mailto:yves.zumbach@gmail.com">
+                                            <i class="align-middle fas fa-at"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </p>
                         </div>
-                        <h6>Why should you buy it</h6>
                     </div>
-                    <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="about">
+            <div class="section-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>About Me</h3>
+                            <div class="line asarphib-line">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                I am a Swiss Student from EPFL (École polytechnique fédérale de Lausanne, in english: Federal polytechnic School of Lausanne).
+                                I am currently doing a one year exchange at Carnegie Mellon University in Pittsburgh, PA.
+                                I will graduate in Spring 2019 in Computer Science, with a minor in Data Science.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
                         <p>
-                            Lorem ipsum dolor sit amet, quo inani munere eu. In eos apeirian <a href="#">phaedrum temporibus</a>, nec accumsan gubergren reprimique ex. Aliquam admodum sed te. Reque scripta nec no. Posse ullamcorper eu sea, ad placerat moderatius pri.
+                            Apart from this technical formation, I am passionate about design and typography.
+                            I designed a few websites and created some paper documents.
+                            I am conversational with most web technologies (HTML5, CSS3, Javascript, TypeScript, etc.).
+                            For paper, I love LaTeX (a programmable typesetting system) which I used for the paper documents showcased below.
                         </p>
-                        <p>
-                            Choro moderatius contentiones sed cu. Eam porro quaestio electram ei, sit everti iudicabit democritum ne, <i>atomorum interesset</i> quo et. Vidisse corpora ad mel, summo voluptatum at qui, in periculis omittantur nam. Pro habemus evertitur ne.
-                        </p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <p>
-                            Choro moderatius contentiones sed cu. Eam porro quaestio electram ei, sit everti iudicabit democritum ne, atomorum interesset quo et <span class="badge badge-danger">new</span>. Vidisse corpora ad mel, summo voluptatum at qui, in periculis voluptatum atentia.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, quo inani munere eu. In eos apeirian phaedrum temporibus, nec accumsan gubergren reprimique ex. Aliquam admodum sed te. Reque scripta nec no. Posse ullamcorper eu sea pro an illud iisque vondras.
-                        </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="showcaseWeb">
+
+            <div class="text-center mt-5 big-margin-bottom">
+                <h2 class="text-white">My Web Designs</h2>
+            </div>
+
+            <base-showcase-component
+                    big-overlay
+                    link="https://jonathanbennett980.github.io/ASARPhiB/"
+                    title="ASARPhiB"
+                    image-alt="ASARPhiB Screenshot"
+                    button-text="Discover ASARPhiB">
+                <template slot="image">
+                    <single-image-component
+                            link="https://jonathanbennett980.github.io/ASARPhiB/"
+                            image-path='./img/asarphib_computer.png'
+                            image-alt='ASARPhiB Screenshot'>
+                    </single-image-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        Designed and implemented a philosophical blog concerned with broad societal issues like climate change  that advocates a logical approach to philosophy.
                     </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <p>
+                        Website source code is released under an Open Source licence and can be found <a href="https://github.com/JonathanBennett980/ASARPhiB">here</a>.
+                    </p>
+                    <p class="mb-5">
+                        Implemented with <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/jekyller/jasper">Jasper</a> and <a href="https://pages.github.com/">GitHub Pages</a>
+                    </p>
+                </template>
+            </base-showcase-component>
+
+            <base-showcase-component
+                    big-overlay
+                    align-image-right
+                    link="http://jeanpierrepastori.ch/"
+                    title="Jean Pierre Pastori's Online Resume"
+                    image-alt="jeanpierrepastori.ch Screenshot"
+                    button-text="Explore the Website">
+                <template slot="image">
+                    <single-image-component
+                            link="http://jeanpierrepastori.ch/"
+                            image-path='./img/jpp_computer.png'
+                            image-alt='jeanpierrepastori.ch Screenshot'>
+                    </single-image-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        Created the online resume of a Swiss national writer, journalist and dance expert that was the director of a Swiss national landmark, the castle of Chillon, from 2008 to 2014.
+                    </p>
+                    <p class="mb-5">
+                        Implemented using <a href="https://materializecss.com/">Materializecss</a>
+                    </p>
+                </template>
+            </base-showcase-component>
+
+        </section>
 
 
-<section id="showcaseWeb">
 
-    <div class="text-center">
-        <h2 class="text-white">My Web Designs</h2>
-    </div>
-
-    <div class="d-lg-flex flex-lg-equal w-100 px-4 px-md-5 my-4 my-md-5 big-margin-bottom">
-        <div class="w-100">
-            <a href="https://jonathanbennett980.github.io/ASARPhiB/">
-                <div class="show-md-up">
-                    <img class="img-fluid w-75" src="./img/asarphib_computer.png" alt="ASARPhiB Screenshot">
-                </div>
-                <div class="w-100 mr-lg-5 mb-4 show-sm-down">
-                    <img class="w-100" src="./img/asarphib_computer.png" alt="ASARPhiB Screenshot">
-                </div>
-            </a>
-
-            <div class="shadow card-overlay-right bg-light p-4 p-md-5">
-                <table class="p-3 h-100">
-                    <tbody class="h-100">
-                        <tr class="h-100 align-middle">
-                            <td>
-                                <h3 class="display-5">
-                                    <a href="https://jonathanbennett980.github.io/ASARPhiB/" class="deco-none">
-                                        ASARPhiB
-                                    </a>
-                                </h3>
-                                <div class="line asarphib-line">
-                                </div>
-                                <p>
-                                    Designed and implemented a philosophical blog concerned with broad societal issues like cllimate change and over population that advocates a logical approach to philosophy.
-                                </p>
-                                <p>
-                                    Website source code is released under an Open Source licence and can be found <a href="https://github.com/JonathanBennett980/ASARPhiB">here</a>.
-                                </p>
-                                <p class="mb-5">
-                                    Implemented with <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/jekyller/jasper">Jasper</a> and <a href="https://pages.github.com/">GitHub Pages</a>
-                                </p>
-                                <div class="text-center mb-0">
-                                    <a href="https://jonathanbennett980.github.io/ASARPhiB/" class="btn btn-outline-primary" target="_blank">Discover ASARPhiB</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="d-lg-flex flex-lg-equal w-100 px-4 px-md-5 my-4 my-md-5 big-margin-bottom">
-        <div class="w-100">
-            <div class="text-right">
-                <a href="http://jeanpierrepastori.ch/">
-                    <div class="show-md-up">
-                        <img class="img-fluid w-75" src="./img/jpp_computer.png" alt="jeanpierrepastori.ch Screenshot">
+        <section id="about">
+            <div class="section-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Design Process</h3>
+                            <div class="line asarphib-line">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                When designing, I try to be target focused.
+                                First I want to have a design adapted to the task at hand.
+                                Second I want the design to be beautiful and consistent so that it makes the target want to read or explore.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                        <p>
+                            I love web design and lots I the thing I design tend to have a flat or material inspired design.
+                        </p>
+                        </div>
                     </div>
-                    <div class="w-100 mr-lg-5 mb-4 show-sm-down">
-                        <img class="w-100" src="./img/jpp_computer.png" alt="jeanpierrepastori.ch Screenshot">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="showcasePaper">
+            <div class="text-center mt-5 big-margin-bottom">
+                <h2 class="text-white margin-bottom40">My Paper Design</h2>
+            </div>
+
+
+            <base-showcase-component
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/articleGeopolitique_YvesZumbach_2016.pdf"
+                    title="Hacking and Geopolitics Article"
+                    button-text="View the Article">
+                <template slot="image">
+                    <two-images-component
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/articleGeopolitique_YvesZumbach_2016.pdf"
+                            image-path1='./img/geo_article.png'
+                            image-alt1='Geopolitics Article Page 1'
+                            image-path2='./img/geo_article2.png'
+                            image-alt2='Geopolitics Article Page 2'>
+                    </two-images-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        I created this modern looking template for article with web design in mind.
+                        It aims at being very graphical and interest readers through varying elements like side notes, images, numbers and quotations.
+                    </p>
+                    <p class="mb-5">
+                        Implemented as a LaTeX class for the LaTeX typesetting system.
+                        Provides all commands needed for various typographical elements like brief table of contents and margin paragraphs.
+                    </p>
+                </template>
+            </base-showcase-component>
+
+
+            <base-showcase-component
+                    align-image-right
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
+                    title="Invitation Letter Proposal"
+                    button-text="View the Document">
+                <template slot="image">
+                    <single-image-component
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
+                            image-path='./img/matu1.png'
+                            image-alt='Proposal Page 1'>
+                    </single-image-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        I designed this document for a graduation invitation letter.
+                        The tatoo like shape on the first page is of my creation and is inspired from the maori koru symbol that symbolizes passage and the cycle of life.
+                    </p>
+                    <p class="mb-5">
+                        Created with LaTeX.
+                    </p>
+                </template>
+            </base-showcase-component>
+
+
+            <base-showcase-component
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/B22_poster.pdf"
+                    title="Internet Pollution Poster"
+                    image-alt="Poster"
+                    button-text="Get the Poster">
+                <template slot="image">
+                    <single-image-component
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/B22_poster.pdf"
+                            image-path='./img/poster.png'
+                            image-alt='Poster'>
+                    </single-image-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        Internet pollution is becoming an ever more important issue.
+                        I wanted a modern look that would make the reader actually want to read our poster so as to raise the maximum possible awarness about this issue.
+                    </p>
+                    <p class="mb-5">
+                        Created with LaTeX
+                    </p>
+                </template>
+            </base-showcase-component>
+
+
+            <base-showcase-component
+                    align-image-right
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/TM_YvesZUMBACH_2014-2015.pdf"
+                    title="Graduation Work"
+                    button-text="View this work">
+                <template slot="image">
+                    <two-images-component
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/TM_YvesZUMBACH_2014-2015.pdf"
+                            image-path1='./img/tm1.png'
+                            image-alt1='TM Page 1'
+                            image-path2='./img/tm2.png'
+                            image-alt2='TM Page 2'>
+                    </two-images-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        I had to produce this document as a graduating work.
+                        I spent some time designing a very neath reading experience with a lite typography.
+                        The goal was to have something epurated, web-inspired and video-game alike.
+                    </p>
+                    <p class="mb-5">
+                        Created with LaTeX.
+                    </p>
+                </template>
+            </base-showcase-component>
+
+
+            <base-showcase-component
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/citationNature.pdf"
+                    title="Nature Quote"
+                    image-alt="A page showcasing a beautiful quote about Nature"
+                    button-text="Get this Document">
+                <template slot="image">
+                    <single-image-component
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/citationNature.pdf"
+                            image-path='./img/nature.png'
+                            image-alt='A page showcasing a beautiful quote about Nature'>
+                    </single-image-component>
+                </template>
+                <template slot="text">
+                    <p>
+                        Will Nature always accept us?
+                        Even if we continue to destroy it as we do now?
+                        This is what this document is about!
+                    </p>
+                    <p class="mb-5">
+                        Created with LaTeX
+                    </p>
+                </template>
+            </base-showcase-component>
+
+
+            <!-- <div class="d-lg-flex flex-lg-equal w-100 my-3">
+                <div class="w-100 w-lg-50 bg-light p-4 p-md-5 overflow-hidden">
+                    <img class="w-50 mr-3 rounded" src="./img/geo_article.png" alt="Geopolitics Article Page 1">
+                    <img class="w-50 rounded" src="./img/geo_article2.png" alt="Geopolitics Article Page 2">
+                </div>
+                <div class="w-100 w-lg-50 bg-dark m-lg-3 p-4 p-md-5 overflow-hidden text-white">
+                    <table class="my-3 p-3 h-100">
+                        <tbody class="h-100">
+                            <tr class="h-100 align-middle">
+                                <td>
+                                    <div class="w-100 text-center mb-3">
+                                        <h3 class="display-5">
+                                            Jean Pierre Pastori's Online Resume
+                                        </h3>
+                                    </div>
+                                    <div class="spacer">
+                                    </div>
+                                    <p class="lead">
+                                        Designed and implemented a philosophical blog concerned with broad societal issues like cllimate change and over population that advocates a logical approach to philosophy.
+                                    </p>
+                                    <p class="lead">
+                                        Website source code is released under an Open Source licence and can be found <a href="https://github.com/JonathanBennett980/ASARPhiB">here</a>.
+                                    </p>
+                                    <p class="lead mb-5">
+                                        Implemented with <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/jekyller/jasper">Jasper</a> and <a href="https://pages.github.com/">GitHub Pages</a>
+                                    </p>
+                                    <div class="text-center">
+                                        <a href="https://jonathanbennett980.github.io/ASARPhiB/" class="btn btn-outline-warning">Discover ASARPhiB</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+        </section>
+
+
+
+
+        <section class="footer">
+            <p class="credits">
+                Copyright 2018 @ Yves Zumbach
+            </p>
+            <ul class="footericons">
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/yves-z-4b1110103/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:yves.zumbach@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <script>
+        Vue.component('two-images-component', {
+            props: {
+                imagePath1: {
+                    required: true,
+                },
+                imageAlt1: {
+                    required: true,
+                },
+                imagePath2: {
+                    required: true,
+                },
+                imageAlt2: {
+                    required: true,
+                },
+                link: {
+                    required: true,
+                },
+            },
+            template: `
+                <div class="col-12 col-md-9 mb-4">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <a :href="link">
+                                <img class="img-fluid rounded" :src="imagePath1" :alt="imageAlt1">
+                            </a>
+                        </div><div class="col-6 show-md-up">
+                            <a :href="link">
+                                <img class="img-fluid rounded" :src="imagePath2" :alt="imageAlt2">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `
+        })
+        Vue.component('single-image-component', {
+            props: {
+                imagePath: {
+                    required: true,
+                },
+                imageAlt: {
+                    required: true,
+                },
+                link: {
+                    required: true,
+                },
+            },
+            template: `
+            <div class="col-12 col-md-9">
+                <a :href="link">
+                    <div class="show-md-up">
+                        <img class="img-fluid rounded" :src="imagePath" :alt="imageAlt">
+                    </div>
+                    <div class="mr-lg-5 mb-4 show-sm-down">
+                        <img class="img-fluid rounded" :src="imagePath" :alt="imageAlt">
                     </div>
                 </a>
             </div>
-
-            <div class="shadow card-overlay-left bg-dark text-white p-4 p-md-5">
-                <table class="p-3 h-100">
-                    <tbody class="h-100">
-                        <tr class="h-100 align-middle">
-                            <td>
-                                <h3 class="display-5">
-                                    <a href="http://jeanpierrepastori.ch/" class="deco-none">
-                                        Jean Pierre Pastori's Online Resume
-                                    </a>
-                                </h3>
-                                <div class="line asarphib-line">
-                                </div>
-                                <p>
-                                    The online resume of a Swiss national writer, journalist and dance expert that was the director of a Swiss national landmark, the castle of Chillon, from 2008 to 2014.
-                                </p>
-                                <p class="mb-5">
-                                    Implemented using <a href="https://materializecss.com/">Materializecss</a>
-                                </p>
-                                <div class="text-center mb-0">
-                                    <a href="http://jeanpierrepastori.ch/" class="btn btn-outline-primary" target="_blank">Explore this website</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section id="about">
-    <div class="section-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Something about this audio file</h3>
-                    <div class="spacer">
+            `
+        })
+        Vue.component('base-showcase-component', {
+            props: {
+                alignImageRight: {
+                    type: Boolean,
+                    default: false,
+                },
+                link: {
+                    required: true,
+                },
+                title: {
+                    required: true,
+                },
+                buttonText: {
+                    required: true,
+                },
+                bigOverlay: {
+                    type: Boolean,
+                    default: false,
+                }
+            },
+            data: function() {
+                return {
+                    classes: {
+                        'card-right': !this.alignImageRight,
+                        'card-left': this.alignImageRight,
+                        'big-overlay': this.bigOverlay,
+                        'small-overlay': !this.bigOverlay,
+                        'shadow': true,
+                        'bg-dark': true,
+                        'text-white': true,
+                        'p-4': true,
+                        'p-md-5': true,
+                        'rounded-md-up': true
+                    },
+                    imageTemplate: Vue.compile("<div>{{imageCode}}</div>"),
+                    Vue: Vue
+                }
+            },
+            template: `
+            <div class="d-lg-flex flex-lg-equal w-100 px-4 px-md-5 my-4 my-md-5 big-margin-bottom">
+                <div class="w-100">
+                    <div :class="[ alignImageRight? 'text-right justify-content-end': '', 'row']">
+                        <slot name="image">
+                        </slot>
                     </div>
-                    <h6>Why should you buy it</h6>
+                    <div :class="classes">
+                        <table class="p-3 w-100">
+                            <tbody class="h-100">
+                                <tr class="h-100 align-middle">
+                                    <td>
+                                        <h3 class="display-5">
+                                            <a :href="link" class="deco-none">
+                                                {{title}}
+                                            </a>
+                                        </h3>
+                                        <div class="line asarphib-line">
+                                        </div>
+                                        <slot name="text"></slot>
+                                        <div class="text-center mb-0">
+                                            <a :href="link" class="btn btn-outline-warning" target="_blank">{{buttonText}}</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <p>
-                        Lorem ipsum dolor sit amet, quo inani munere eu. In eos apeirian <a href="#">phaedrum temporibus</a>, nec accumsan gubergren reprimique ex. Aliquam admodum sed te. Reque scripta nec no. Posse ullamcorper eu sea, ad placerat moderatius pri.
-                    </p>
-                    <p>
-                        Choro moderatius contentiones sed cu. Eam porro quaestio electram ei, sit everti iudicabit democritum ne, <i>atomorum interesset</i> quo et. Vidisse corpora ad mel, summo voluptatum at qui, in periculis omittantur nam. Pro habemus evertitur ne.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Choro moderatius contentiones sed cu. Eam porro quaestio electram ei, sit everti iudicabit democritum ne, atomorum interesset quo et <span class="badge badge-danger">new</span>. Vidisse corpora ad mel, summo voluptatum at qui, in periculis voluptatum atentia.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, quo inani munere eu. In eos apeirian phaedrum temporibus, nec accumsan gubergren reprimique ex. Aliquam admodum sed te. Reque scripta nec no. Posse ullamcorper eu sea pro an illud iisque vondras.
-                    </p>
-                </p>
             </div>
-        </div>
-    </div>
-</div>
-</section>
+            `
+        })
 
-
-<section id="showcasePaper">
-    <div class="container">
-        <div class="text-center">
-            <h3 class="text-white margin-bottom40">Paper Design</h3>
-        </div>
-
-
-
-        <div class="d-lg-flex flex-lg-equal w-100 my-3 px-3">
-            <div class="w-100 w-lg-50 bg-light m-lg-3 p-4 p-md-5 overflow-hidden">
-                <img class="w-100" src="./img/jpp_computer.png" alt="ASARPhiB Screenshot">
-            </div>
-            <div class="w-100 w-lg-50 bg-dark m-lg-3 p-4 p-md-5 overflow-hidden text-white">
-                <table class="my-3 p-3 h-100">
-                    <tbody class="h-100">
-                        <tr class="h-100 align-middle">
-                            <td>
-                                <div class="w-100 text-center mb-3">
-                                    <h3 class="display-5">
-                                        Jean Pierre Pastori's Online Resume
-                                    </h3>
-                                </div>
-                                <div class="spacer">
-                                </div>
-                                <p class="lead">
-                                    Designed and implemented a philosophical blog concerned with broad societal issues like cllimate change and over population that advocates a logical approach to philosophy.
-                                </p>
-                                <p class="lead">
-                                    Website source code is released under an Open Source licence and can be found <a href="https://github.com/JonathanBennett980/ASARPhiB">here</a>.
-                                </p>
-                                <p class="lead mb-5">
-                                    Implemented with <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/jekyller/jasper">Jasper</a> and <a href="https://pages.github.com/">GitHub Pages</a>
-                                </p>
-                                <div class="text-center">
-                                    <a href="https://jonathanbennett980.github.io/ASARPhiB/" class="btn btn-outline-primary">Discover ASARPhiB</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-<section class="footer">
-    <p class="credits">
-        Copyright 2017 @ Your Website.com. Free Template by <a href="https://www.wowthemes.net">WowThemes.net</a>
-    </p>
-    <ul class="footericons">
-        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-google-plus"></a></i></li>
-        <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-soundcloud"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-apple"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-amazon"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fa fa-vimeo"></i></a></li>
-    </ul>
-</section>
-
-
-
-
-<div class="modal fade" id="termsofuse" tabindex="-1" role="dialog" aria-labelledby="termsofuse" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Terms of Use & Refund Policy</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                </p>
-                <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                </p>
-                <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                </p>
-                <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                </p>
-                <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        new Vue({ el: '#app' });
+    </script>
 
 </body>
 </html>
