@@ -7,6 +7,6 @@
 
 @font-face {
     font-family: 'LoveloLine';
-    src: url('../fonts/LoveloLineBold.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/LoveloLineBold.woff') format('woff');
+    src: url('../fonts/LoveloLineLight.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/LoveloLineLight.woff') format('woff');
     font-weight: bold;
 }
