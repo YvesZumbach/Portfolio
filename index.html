@@ -9,8 +9,21 @@
     <title>Yves Zumbach Portfolio</title>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- Font Inclusion -->
-    <link href="css/font-faces.css" rel="stylesheet">
+    
+    <style>
+        @font-face {
+            font-family: 'DiamondsRegular';
+            src: url('./fonts/DiamondsRegular.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/DiamondsRegular.woff') format('woff');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'LoveloLine';
+            src: url('./fonts/LoveloLineLight.woff') format('woff'), url('https://yveszumbach.github.io/Portfolio/fonts/LoveloLineLight.woff') format('woff');
+            font-weight: bold;
+        }
+    </style>
+
     <!-- Main CSS -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- Googe Fonts -->
@@ -174,12 +187,12 @@
 
 
             <base-showcase-component
-                    link="https://github.com/YvesZumbach/Portfolio/blob/master/articleGeopolitique_YvesZumbach_2016.pdf"
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/articleGeopolitique_YvesZumbach_2016.pdf"
                     title="Hacking and Geopolitics Article"
                     button-text="View the Article">
                 <template slot="image">
                     <two-images-component
-                            link="https://github.com/YvesZumbach/Portfolio/blob/master/articleGeopolitique_YvesZumbach_2016.pdf"
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/articleGeopolitique_YvesZumbach_2016.pdf"
                             image-path1='./img/geo_article.png'
                             image-alt1='Geopolitics Article Page 1'
                             image-path2='./img/geo_article2.png'
@@ -201,12 +214,12 @@
 
             <base-showcase-component
                     align-image-right
-                    link="https://github.com/YvesZumbach/Portfolio/blob/master/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
                     title="Invitation Letter Proposal"
                     button-text="View the Document">
                 <template slot="image">
                     <single-image-component
-                            link="https://github.com/YvesZumbach/Portfolio/blob/master/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/cartonInvitationMatuTotal_YvesZumbach_2015-2016.pdf"
                             image-path='./img/matu1.png'
                             image-alt='Proposal Page 1'>
                     </single-image-component>
@@ -224,13 +237,13 @@
 
 
             <base-showcase-component
-                    link="https://github.com/YvesZumbach/Portfolio/blob/master/B22_poster.pdf"
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/B22_poster.pdf"
                     title="Internet Pollution Poster"
                     image-alt="Poster"
                     button-text="Get the Poster">
                 <template slot="image">
                     <single-image-component
-                            link="https://github.com/YvesZumbach/Portfolio/blob/master/B22_poster.pdf"
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/B22_poster.pdf"
                             image-path='./img/poster.png'
                             image-alt='Poster'>
                     </single-image-component>
@@ -249,12 +262,12 @@
 
             <base-showcase-component
                     align-image-right
-                    link="https://github.com/YvesZumbach/Portfolio/blob/master/TM_YvesZUMBACH_2014-2015.pdf"
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/TM_YvesZUMBACH_2014-2015.pdf"
                     title="Graduation Work"
                     button-text="View this work">
                 <template slot="image">
                     <two-images-component
-                            link="https://github.com/YvesZumbach/Portfolio/blob/master/TM_YvesZUMBACH_2014-2015.pdf"
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/TM_YvesZUMBACH_2014-2015.pdf"
                             image-path1='./img/tm1.png'
                             image-alt1='TM Page 1'
                             image-path2='./img/tm2.png'
@@ -275,13 +288,13 @@
 
 
             <base-showcase-component
-                    link="https://github.com/YvesZumbach/Portfolio/blob/master/citationNature.pdf"
+                    link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/citationNature.pdf"
                     title="Nature Quote"
                     image-alt="A page showcasing a beautiful quote about Nature"
                     button-text="Get this Document">
                 <template slot="image">
                     <single-image-component
-                            link="https://github.com/YvesZumbach/Portfolio/blob/master/citationNature.pdf"
+                            link="https://github.com/YvesZumbach/Portfolio/blob/master/assets/citationNature.pdf"
                             image-path='./img/nature.png'
                             image-alt='A page showcasing a beautiful quote about Nature'>
                     </single-image-component>
@@ -297,43 +310,6 @@
                     </p>
                 </template>
             </base-showcase-component>
-
-
-            <!-- <div class="d-lg-flex flex-lg-equal w-100 my-3">
-                <div class="w-100 w-lg-50 bg-light p-4 p-md-5 overflow-hidden">
-                    <img class="w-50 mr-3 rounded" src="./img/geo_article.png" alt="Geopolitics Article Page 1">
-                    <img class="w-50 rounded" src="./img/geo_article2.png" alt="Geopolitics Article Page 2">
-                </div>
-                <div class="w-100 w-lg-50 bg-dark m-lg-3 p-4 p-md-5 overflow-hidden text-white">
-                    <table class="my-3 p-3 h-100">
-                        <tbody class="h-100">
-                            <tr class="h-100 align-middle">
-                                <td>
-                                    <div class="w-100 text-center mb-3">
-                                        <h3 class="display-5">
-                                            Jean Pierre Pastori's Online Resume
-                                        </h3>
-                                    </div>
-                                    <div class="spacer">
-                                    </div>
-                                    <p class="lead">
-                                        Designed and implemented a philosophical blog concerned with broad societal issues like cllimate change and over population that advocates a logical approach to philosophy.
-                                    </p>
-                                    <p class="lead">
-                                        Website source code is released under an Open Source licence and can be found <a href="https://github.com/JonathanBennett980/ASARPhiB">here</a>.
-                                    </p>
-                                    <p class="lead mb-5">
-                                        Implemented with <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://github.com/jekyller/jasper">Jasper</a> and <a href="https://pages.github.com/">GitHub Pages</a>
-                                    </p>
-                                    <div class="text-center">
-                                        <a href="https://jonathanbennett980.github.io/ASARPhiB/" class="btn btn-outline-warning">Discover ASARPhiB</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div> -->
         </section>
 
 
